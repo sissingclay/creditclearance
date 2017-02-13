@@ -1,0 +1,16 @@
+{
+  "name": "credit_clearance",
+  "version": "",
+  "scripts": {
+    "dev": "nodemon ./server/entry.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.22",
+    "rx": "^4.1.0"
+  }
+}
