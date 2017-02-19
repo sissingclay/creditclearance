@@ -10,7 +10,13 @@
   "dependencies": {
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
-    "mongodb": "^2.2.22",
-    "rx": "^4.1.0"
+    "express-stormpath": "^3.2.0",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.3",
+    "mongoose-type-email": "^1.0.3",
+    "node-env-file": "^0.1.8",
+    "passport-userapp": "^1.1.2",
+    "rx": "^4.1.0",
+    "stormpath": "^0.20.1"
   }
 }

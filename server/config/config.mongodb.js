@@ -1,15 +1,15 @@
-const dbUser = 'credit'
-const dbPassword = 'credit007!'
-const dbUrl = `mongodb://${dbUser}:${dbPassword}@ds023902.mlab.com:23902/credit`
+const dbUrl = `mongodb://localhost:27017/credit`
 const state = {
   db: null
 }
-const MongoClient = require('mongodb').MongoClient
+
+const mongoose = require('mongoose')
+mongoose.Promise = global.Promise
 
 exports.connect = (done) => {
   if (state.db) return done()
 
-  MongoClient.connect(dbUrl, (err, db) => {
+  mongoose.connect(dbUrl, (err, db) => {
     if (err) return done(err)
     state.db = db
     done()
